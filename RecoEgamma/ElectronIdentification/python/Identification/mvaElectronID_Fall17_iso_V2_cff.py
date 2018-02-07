@@ -136,7 +136,7 @@ MVA_WPHZZ = EleMVA_WP(
     cutCategory1 = 0.5504628790992929,   # EB2 low pt
     cutCategory2 = 0.5924627534389098,   # EE low pt
     cutCategory3 = -0.03391387993354392,  # EB1
-    cutCategory4 = -0.018451958064666783  # EB2
+    cutCategory4 = -0.018451958064666783,  # EB2
     cutCategory5 = -0.38565459150737535   # EE
     )
 
