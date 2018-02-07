@@ -32,12 +32,12 @@ ebeeSplit = 1.479  # division between barrel and endcap
 
 
 mvaFall17WeightFiles_V2 = cms.vstring(
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB1_5.weights.xml",
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB2_5.weights.xml",
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EE_5.weights.xml",
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB1_10.weights.xml",
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB2_10.weights.xml",
-    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EE_10.weights.xml"
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB1_5.weights.xml.gz",
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB2_5.weights.xml.gz",
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EE_5.weights.xml.gz",
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB1_10.weights.xml.gz",
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EB2_10.weights.xml.gz",
+    "RecoEgamma/ElectronIdentification/data/Fall17/electronID_mva_Fall17_noIso_V2_EE_10.weights.xml.gz"
     )
 
 # Load some common definitions for MVA machinery
@@ -63,19 +63,19 @@ MVA_WP90 = EleMVA_WP(
     mvaCategoriesMapName = mvaCategoriesMapName, # map with category index for all particles
     cutCategory0_C0 = 0.9194119065699909,  # EB1 low pt
     cutCategory0_C1 = 2.960512196567283,
-    cutCategory0_C2 = 1.1224376343699878
+    cutCategory0_C2 = 1.1224376343699878,
     cutCategory1_C0 = 0.8615716064570684,  # EB2 low pt
     cutCategory1_C1 = 2.5091268456912874,
-    cutCategory1_C2 = 0.7471085602428349
+    cutCategory1_C2 = 0.7471085602428349,
     cutCategory2_C0 = 0.7634510333747148,  # EE low pt
     cutCategory2_C1 = 1.3018890137217956,
-    cutCategory2_C2 = 17.99527477409486
+    cutCategory2_C2 = 17.99527477409486,
     cutCategory3_C0 = 0.9580855123030142,  # EB1
     cutCategory3_C1 = 8.904973701688647,
-    cutCategory3_C2 = 3.5017111808963404
+    cutCategory3_C2 = 3.5017111808963404,
     cutCategory4_C0 = 0.9238323042526464,  # EB2
     cutCategory4_C1 = 9.167734241330061,
-    cutCategory4_C2 = 3.64643837209186
+    cutCategory4_C2 = 3.64643837209186,
     cutCategory5_C0 = 0.8812593700808523,  # EE
     cutCategory5_C1 = 11.51356941995292,
     cutCategory5_C2 = 4.054192899471584
@@ -88,19 +88,19 @@ MVA_WP80 = EleMVA_WP(
     mvaCategoriesMapName = mvaCategoriesMapName, # map with category index for all particles
     cutCategory0_C0 = 0.9563759935436272,  # EB1 low pt
     cutCategory0_C1 = 2.8841209996462385,
-    cutCategory0_C2 = 0.5213141042497962
+    cutCategory0_C2 = 0.5213141042497962,
     cutCategory1_C0 = 0.929606513571081,   # EB2 low pt
     cutCategory1_C1 = 2.0615806479950085,
-    cutCategory1_C2 = 0.5720789453940258
+    cutCategory1_C2 = 0.5720789453940258,
     cutCategory2_C0 = 0.9115136155483037,  # EE low pt
     cutCategory2_C1 = 1.2555335214477281,
-    cutCategory2_C2 = 8.05816302290571
+    cutCategory2_C2 = 8.05816302290571,
     cutCategory3_C0 = 0.9806265216254968,  # EB1
     cutCategory3_C1 = 9.043301811060447,
-    cutCategory3_C2 = 1.2220348631544082
+    cutCategory3_C2 = 1.2220348631544082,
     cutCategory4_C0 = 0.9674974218183561,  # EB2
     cutCategory4_C1 = 8.536661593554728,
-    cutCategory4_C2 = 1.7375413024707924
+    cutCategory4_C2 = 1.7375413024707924,
     cutCategory5_C0 = 0.9472792428840157,  # EE
     cutCategory5_C1 = 8.551318188121513,
     cutCategory5_C2 = 3.3411396528324135
