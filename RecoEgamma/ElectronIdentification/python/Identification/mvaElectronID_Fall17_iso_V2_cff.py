@@ -127,7 +127,7 @@ MVA_WPLoose = EleMVA_WP(
 # The working points were found by requiring the same signal efficiencies in
 # each category as for the Spring 16 HZZ ID
 # (see RecoEgamma/ElectronIdentification/python/Identification/mvaElectronID_Spring16_HZZ_V1_cff.py)
-idNamewpHZZ = "mvaEleID-Fall17-iso-V1-wpHZZ"
+idNamewpHZZ = "mvaEleID-Fall17-iso-V2-wpHZZ"
 MVA_WPHZZ = EleMVA_WP(
     idName = idNamewpHZZ,
     mvaValueMapName = mvaValueMapName,           # map with MVA values for all particles
