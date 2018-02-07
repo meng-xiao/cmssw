@@ -123,6 +123,23 @@ MVA_WPLoose = EleMVA_WP(
     cutCategory5 = -0.7450408698516471   # EE
     )
 
+### WP tuned for HZZ analysis to match the Spring16 ID efficiency plus iso cut of < 0.35
+# The working points were found by requiring the same signal efficiencies in
+# each category as for the Spring 16 HZZ ID
+# (see RecoEgamma/ElectronIdentification/python/Identification/mvaElectronID_Spring16_HZZ_V1_cff.py)
+idNamewpHZZ = "mvaEleID-Fall17-iso-V1-wpHZZ"
+MVA_WPHZZ = EleMVA_WP(
+    idName = idNamewpHZZ,
+    mvaValueMapName = mvaValueMapName,           # map with MVA values for all particles
+    mvaCategoriesMapName = mvaCategoriesMapName, # map with category index for all particles
+    cutCategory0 = 0.5739521065342641,    # EB1 low pt
+    cutCategory1 = 0.5504628790992929,   # EB2 low pt
+    cutCategory2 = 0.5924627534389098,   # EE low pt
+    cutCategory3 = -0.03391387993354392,  # EB1
+    cutCategory4 = -0.018451958064666783  # EB2
+    cutCategory5 = -0.38565459150737535   # EE
+    )
+
 #
 # Configure variable names and the values they are clipped to.
 # They have to appear in the same order as in the weights xml file
@@ -190,6 +207,7 @@ mvaEleID_Fall17_iso_V2_producer_config = cms.PSet(
     )
 # Create the VPset's for VID cuts
 mvaEleID_Fall17_V2_wpLoose = configureVIDMVAEleID_V1( MVA_WPLoose )
+mvaEleID_Fall17_V2_wpHZZ = configureVIDMVAEleID_V1( MVA_WPHZZ )
 mvaEleID_Fall17_V2_wp90 = configureVIDMVAEleID_V1( MVA_WP90, cutName="GsfEleMVAExpoScalingCut")
 mvaEleID_Fall17_V2_wp80 = configureVIDMVAEleID_V1( MVA_WP80, cutName="GsfEleMVAExpoScalingCut")
 
